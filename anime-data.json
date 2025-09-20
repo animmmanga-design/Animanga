@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Blue Lock",
+        "image": "blue_lock.jpg",
+        "link": "blue_lock.html"
+    },
+    {
+        "title": "Jujutsu Kaisen",
+        "image": "JJK.jpg",
+        "link": "jujutsu.html"
+    },
+    {
+        "title": "Demon Slayer",
+        "image": "demonslayer.jpg",
+        "link": "demonslayer.html"
+    },
+    {
+        "title": "lionel kiki",
+        "image": "captain_tsubasa.jpg",
+        "link": "captain_tsubasa.html"
+    }
+]
