@@ -13,7 +13,7 @@ const animeData = [
     {
         "title": "Demon Slayer",
         "image": "demonslayer.jpg",
-        "link": "demonslayer.html"
+        "link": "demonslayers1.html"
     },
     {
         "title": "Captain Tsubasa",
@@ -50,3 +50,4 @@ function searchAnime() {
 window.onload = () => {
     displayAnimes(animeData);
 };
+
