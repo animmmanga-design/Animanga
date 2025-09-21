@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demon Slayer - Saison 2</title>
+    <title>Demon Slayer - Saison 1</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Navbar en haut */
+        .navbar {
+            background: #111;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .navbar a:hover {
+            background: #444;
+        }
+
         /* Centrer la section épisodes */
         #episodes {
             text-align: center;
@@ -13,17 +32,17 @@
 
         /* Style des épisodes */
         .episode {
-            display: inline-block; /* permet de mettre plusieurs cartes côte à côte */
+            display: inline-block;
             margin: 10px;
             text-align: center;
         }
 
         .episode img {
-            width: 200px;  /* taille réduite */
+            width: 200px;
             height: auto;
             display: block;
-            margin: 0 auto 5px auto; /* centre horizontalement */
-            border-radius: 8px; /* arrondit légèrement les coins */
+            margin: 0 auto 5px auto;
+            border-radius: 8px;
         }
 
         .episode h3 {
@@ -34,9 +53,19 @@
 </head>
 <body>
     <header>
-        <h1>Demon Slayer - 24 épisodes</h1>
-        <a href="demonslayer.jpg"></a>
+        <h1>Demon Slayer - 26 épisodes</h1>
+        <!-- Navbar Saison -->
+        <nav class="navbar">
+            <a href="saison1.html">Saison 1</a>
+            <a href="saison2.html">Saison 2</a>
+            <a href="saison3.html">Saison 3</a>
+            <a href="saison4.html">Saison 4</a>
+        </nav>
     </header>
+
+
+    </header>
+
     <main>
         <h2>Tanjirō Kamado, un jeune garçon, part en quête pour sauver sa sœur transformée en démon et venger sa famille... </h2>
         <section id="episodes">
@@ -198,3 +227,7 @@
                 </a>
             </div>
             </div>
+        </section>
+    </main>
+</body>
+</html>
