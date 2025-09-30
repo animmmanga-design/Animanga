@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,17 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Streaming</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        header img.logo {
+            height: 50px; /* taille du logo */
+            margin-right: 15px; /* espace entre logo et titre */
+        }
+
+        .search-container {
+            margin-left: auto; /* pousse la recherche à droite */
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .search-container button {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .search-container img {
+            height: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Anime Streaming</h1>
+        <img src="animanga.png" alt="Animanga Logo" class="logo">
+        <h1>AniManga</h1>
+
+        <!-- Formulaire de recherche -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher un anime..." onkeyup="searchAnime()">
+            <button id="searchButton">
+                <img class="img" src="loupe-icon.jpg" alt="loupe">
+            </button>
+        </div>
     </header>
 
     <main>
-        <section class="server-offline">
-            <h2>🚧 Les serveurs ont du mal a nous atteindre 🚧</h2>
-            <p>Nous reviendrons plus fort 💪🔥</p>
+        <section id="sport">
+            <!-- Conteneur Flexbox pour animes côte à côte -->
+            <div class="anime-container" id="animeList">
+                <!-- Les cartes anime seront générées ici par JavaScript -->
+            </div>
         </section>
     </main>
 </body>
 </html>
+
