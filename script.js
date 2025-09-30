@@ -1,25 +1,10 @@
 // Charger les données JSON
 const animeData = [
     {
-        "title": "Blue Lock",
-        "image": "blue_lock.jpg",
-        "link": "blue_lock.html"
-    },
-    {
-        "title": "Jujutsu kaisen (season2)",
-        "image": "JJK.jpg",
-        "link": "jujutsu.html"
-    },
-    {
         "title": "Demon Slayer",
         "image": "demonslayer.jpg",
         "link": "demonslayers1.html"
     },
-    {
-        "title": "Captain Tsubasa",
-        "image": "captain_tsubasa.jpg",
-        "link": "captain_tsubasa.html"
-    }
 ];
 
 // Fonction pour afficher les animes
@@ -50,4 +35,5 @@ function searchAnime() {
 window.onload = () => {
     displayAnimes(animeData);
 };
+
 
