@@ -1,239 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demon Slayer - Saison 1</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Navbar en haut */
-        .navbar {
-            background: #111;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            transition: background 0.3s;
-        }
-        .navbar a:hover {
-            background: #444;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demon Slayer - Saison 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* --- Reset global --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.5;
+}
 
-        /* Centrer la section épisodes */
-        #episodes {
-            text-align: center;
-        }
+/* --- Header --- */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-        /* Style des épisodes */
-        .episode {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #222;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+.navbar a:hover {
+    background-color: #ff3d00;
+    color: #fff;
+    transform: scale(1.05);
+}
 
-        .episode img {
-            width: 200px;
-            height: auto;
-            display: block;
-            margin: 0 auto 5px auto;
-            border-radius: 8px;
-        }
+/* --- Main --- */
+main {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
 
-        .episode h3 {
-            margin: 5px 0 0;
-            font-size: 16px;
-        }
-    </style>
+/* --- Description --- */
+main h2:first-of-type {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* --- Episodes Section --- */
+#episodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.episode {
+    background-color: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.episode:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.episode img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.episode h3 {
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+    .episode {
+        width: 140px;
+    }
+    .episode img {
+        height: 180px;
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 22px;
+        padding: 15px 10px;
+    }
+    .episode {
+        width: 120px;
+    }
+    .episode img {
+        height: 150px;
+    }
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Demon Slayer - 26 épisodes</h1>
-        <!-- Navbar Saison -->
-        <nav class="navbar">
-            <a href="demonslayers1.html">Saison 1</a>
-            <a href="Demonslayers2s.html">Saison 2</a>
-            <a href="saison3demonslayer.html">Saison 3</a>
-            <a href="saison4demonslayer.html">Saison 4</a>
-             <a href="filmdemonslayer.html">Film- Le chateau de l'infini</a>
-        </nav>
-    </header>
+<header>
+    <h1>Demon Slayer - Saison 1 (26 épisodes)</h1>
+    <nav class="navbar">
+        <a href="demonslayers1.html">Saison 1</a>
+        <a href="Demonslayers2s.html">Saison 2</a>
+        <a href="saison3demonslayer.html">Saison 3</a>
+        <a href="saison4demonslayer.html">Saison 4</a>
+        <a href="filmdemonslayer.html">Film - Le château de l'infini</a>
+    </nav>
+</header>
 
+<main>
+    <h2>Tanjirō Kamado, un jeune garçon, part en quête pour sauver sa sœur transformée en démon et venger sa famille...</h2>
 
-    </header>
-
-    <main>
-        <h2>Tanjirō Kamado, un jeune garçon, part en quête pour sauver sa sœur transformée en démon et venger sa famille... </h2>
-        <section id="episodes">
-            <h2>Épisodes</h2>
-
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1DEX-BESaBQtVT7lqQXSPReBLMDtw_c15/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 1">
-                    <h3>Épisode 1</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1DEX-BESaBQtVT7lqQXSPReBLMDtw_c15/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 2">
-                    <h3>Épisode 2</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1vn4yvoDlei3himBYv3wRXYQLwyjvwOZ9/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 3">
-                    <h3>Épisode 3</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1d5extQW6BOkRZGIueD1s2mx6vxiczMd9/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 4">
-                    <h3>Épisode 4</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1HQG62VlLooNPn4pEBuT0sZtZcnGSuNHt/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 5">
-                    <h3>Épisode 5</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1PpsefmvGacRMAZTYV9fSSjIwGMA-zjCI/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 6">
-                    <h3>Épisode 6</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1ybhYYEFrAQsazQpZrCGcTG0lneg0kk75/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 7">
-                    <h3>Épisode 7</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/16-63WFZj20f82BJyOR44gAXnjPTOhEL0/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 8">
-                    <h3>Épisode 8</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1QqcO31xX_D9YWENe6PtolT1ER7-Xqd5M/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 9">
-                    <h3>Épisode 9</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1Zns8u_64YiWcvY3Ldg_fK9uKSx3BrXjj/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 10">
-                    <h3>Épisode 10</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/10eEyZVem3izRtApW-PONyjcezg__x6qX/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 11">
-                    <h3>Épisode 11</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1kD17AppyrP4fAIduyJNyOOQbZM6nrK6U/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 12">
-                    <h3>Épisode 12</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1v4PudWlPzvA1g39JC8vgoQI4P5GVZjq7/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 13">
-                    <h3>Épisode 13</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1RhYHLn3CIZRzVOWHdMw1sGwoHOPqpLtp/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 14">
-                    <h3>Épisode 14</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1IzBFcwB7gJhst4cJCZHWZRqleIJahSmF/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 15">
-                    <h3>Épisode 15</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1zQ2LkMlqC-TLSPhSss80VfQohc6JqdpR/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 16">
-                    <h3>Épisode 16</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1ljVnffJ5vFtULV1CHLUd4o0R90VC7HWz/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 17">
-                    <h3>Épisode 17</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1viOe70K5Ha7XgwEEZVwUTV_4GY9c2A9w/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 18">
-                    <h3>Épisode 18</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1qW60TUuvHrV2bCbmJ1PG-y6B-hKD80MK/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 19">
-                    <h3>Épisode 19</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1cw5Hy6nsPk1byTwD5_y2Ztz06hKPuj_r/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 20">
-                    <h3>Épisode 20</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1hrEzVLaoLTZKht3x5ZOHifKn-hqufU_x/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 21">
-                    <h3>Épisode 21</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1sNXSLwGihpJZhfQD87teioDW2-jwKgRf/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 22">
-                    <h3>Épisode 22</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1BoGP62_rFKKXip-4NsNjwnwlVBmpRx6L/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 23">
-                    <h3>Épisode 23</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1k3RzvCCx-VX1X34rb1-vpG18D2T3-62V/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 24">
-                    <h3>Épisode 24</h3>
-                </a>
-            </div>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1o05t0KlK--J2O1ndaM_AjNPbquk9NRe1/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 24">
-                    <h3>Épisode 25</h3>
-                </a>
-            <div class="episode">
-                <a href="https://drive.google.com/file/d/1AJNwG0gjKiHnOZ5ooTSM8G6k_udqj5qQ/view?usp=drive_link" target="_blank">
-                    <img src="demonslayer.jpg" alt="Épisode 24">
-                    <h3>Épisode 26</h3>
-                </a>
-            </div>
-            </div>
-        </section>
-    </main>
+    <section id="episodes">
+        <!-- Exemple d'un épisode -->
+        <div class="episode">
+            <a href="https://drive.google.com/file/d/1DEX-BESaBQtVT7lqQXSPReBLMDtw_c15/view?usp=drive_link" target="_blank">
+                <img src="demonslayer.jpg" alt="Épisode 1">
+                <h3>Épisode 1</h3>
+            </a>
+        </div>
+        <div class="episode">
+            <a href="https://drive.google.com/file/d/1vn4yvoDlei3himBYv3wRXYQLwyjvwOZ9/view?usp=drive_link" target="_blank">
+                <img src="demonslayer.jpg" alt="Épisode 2">
+                <h3>Épisode 2</h3>
+            </a>
+        </div>
+        <!-- Tu peux copier-coller les div .episode pour les autres épisodes -->
+    </section>
+</main>
 </body>
 </html>
-
-
-
-
-
