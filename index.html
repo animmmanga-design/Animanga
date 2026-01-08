@@ -1,68 +1,63 @@
-</html>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Streaming</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Erreur 404 - AniManga</title>
     <style>
-        header {
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            padding: 10px;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
         }
 
-        header img.logo {
-            height: 50px; /* taille du logo */
-            margin-right: 15px; /* espace entre logo et titre */
+        img.logo {
+            width: 200px; /* Logo en gros */
+            height: auto;
+            margin-bottom: 30px;
         }
 
-        .search-container {
-            margin-left: auto; /* pousse la recherche à droite */
-            display: flex;
-            align-items: center;
+        h1 {
+            font-size: 80px;
+            margin: 0;
+            color: #ff4c4c;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
         }
 
-        .search-container input {
-            padding: 5px;
-            font-size: 14px;
+        p {
+            font-size: 24px;
+            color: #ccc;
+            margin-top: 10px;
         }
 
-        .search-container button {
-            border: none;
-            background: none;
-            cursor: pointer;
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #ff4c4c;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: background 0.3s;
         }
 
-        .search-container img {
-            height: 20px;
+        a:hover {
+            background-color: #ff1c1c;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="animanga.png" alt="Animanga Logo" class="logo">
-        <h1>AniManga</h1>
-
-        <!-- Formulaire de recherche -->
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Rechercher un anime..." onkeyup="searchAnime()">
-            <button id="searchButton">
-                <img class="img" src="loupe-icon.jpg" alt="loupe">
-            </button>
-        </div>
-    </header>
-
-    <main>
-        <section id="sport">
-            <!-- Conteneur Flexbox pour animes côte à côte -->
-            <div class="anime-container" id="animeList">
-                <!-- Les cartes anime seront générées ici par JavaScript -->
-            </div>
-        </section>
-    </main>
+    <img src="animanga.png" alt="AniManga Logo" class="logo">
+    <h1>ERREUR 404</h1>
+    <p>La page que vous cherchez n'existe pas.</p>
+    <a href="index.html">Retour à l'accueil</a>
 </body>
 </html>
-
